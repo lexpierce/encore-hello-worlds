@@ -31,7 +31,7 @@ jobs:
         run: bash install.sh
 
       - name: Build Docker image
-        run: /home/runner/.encore/bin/encore build --config render-infra.config.json docker encore-hello-worlds
+        run: /home/runner/.encore/bin/encore build docker encore-hello-worlds
 
       - name: Tag Docker image
         run: docker tag encore-hello-worlds ghcr.io/${{ github.repository }}:latest
