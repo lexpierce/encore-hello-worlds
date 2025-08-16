@@ -1,0 +1,16 @@
+{
+   "$schema": "https://encore.dev/schemas/infra.schema.json",
+   "sql_servers": [
+   {
+      "host": "dpg-d2fslnvdiees73cqg6ug-a",
+      "tls_config": {
+         "disabled": true
+      },
+      "databases": {
+         "encore_hello_worlds": {
+            "username": "encore_hello_worlds_user",
+            "password": {"$env": "DB_PASSWORD"}
+          }
+      }
+   }]   
+}
