@@ -1,7 +1,7 @@
 import { Service } from "encore.dev/service";
 
-// Encore will consider this directory and all its subdirectories as part of the "hello" service.
+// Encore will consider this directory and all its subdirectories as part of the "names" service.
 // https://encore.dev/docs/ts/primitives/services
 
-// hello service responds to requests with a personalized greeting.
+// names service responds to requests with a username matching the provided id.
 export default new Service("names");

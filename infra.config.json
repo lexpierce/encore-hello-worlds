@@ -4,7 +4,7 @@
       {
          "host": "dpg-d2fslnvdiees73cqg6ug-a",
          "tls_config": {
-            "disabled": true
+            "disable_ca_validation": true
          },
          "databases": {
             "mydb": {
