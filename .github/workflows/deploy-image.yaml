@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Download Encore CLI script
-        run: surl --output install.sh -L https://encore.dev/install.sh
+        run: curl --output install.sh -L https://encore.dev/install.sh
 
       - name: Install Encore CLI
         run: bash install.sh
