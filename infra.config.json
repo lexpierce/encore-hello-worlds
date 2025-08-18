@@ -1,5 +1,12 @@
 {
    "$schema": "https://encore.dev/schemas/infra.schema.json",
+   "metadata": {
+      "app_id": {"$env": "RENDER_SERVICE_NAME"},
+      "env_name": "test",
+      "env_type": "test",
+      "cloud": "render",
+      "base_url": {"$env": "RENDER_EXTERNAL_URL"}
+   },
    "sql_servers": [
       {
          "host": "dpg-d2fslnvdiees73cqg6ug-a",

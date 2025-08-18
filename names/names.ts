@@ -1,5 +1,18 @@
-import { api } from "encore.dev/api";
 import { SQLDatabase } from "encore.dev/storage/sqldb";
+import { api } from "encore.dev/api";
+
+// Welcome to Encore!
+// This is a simple "Hello World" project to get you started.
+//
+// To run it, execute "encore run" in your favorite shell.
+
+// ==================================================================
+
+// This is a simple REST API that queries a database for a username matching a provided id.
+// To call it, run in your terminal:
+//
+//      curl http://localhost:4000/names/1
+//
 
 const mydb = new SQLDatabase("mydb", {
   migrations: "./migrations",
