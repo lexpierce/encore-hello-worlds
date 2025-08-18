@@ -39,3 +39,11 @@ jobs:
       - name: Push Docker image
         run: docker push ghcr.io/${{ github.repository }}:latest
 
+      - name: Deploy new image on Render
+        uses: sozo-design/curl@v1.0.2
+        env:
+          MYSECRET: ${{ secrets.DEPLOY_HOOK_SECRET }}
+        with:
+          args: https://api.render.com/deploy/srv-d2fshgv5r7bs73ecdr60?key=$MYSECRET
+        run: 
+
