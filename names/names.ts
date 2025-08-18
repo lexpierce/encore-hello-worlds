@@ -1,7 +1,7 @@
 import { api } from "encore.dev/api";
 import { SQLDatabase } from "encore.dev/storage/sqldb";
 
-const mydb = new SQLDatabase("encore_hello_worlds", {
+const mydb = new SQLDatabase("mydb", {
   migrations: "./migrations",
 });
 

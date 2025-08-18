@@ -7,7 +7,7 @@
             "disabled": true
          },
          "Databases": {
-            "encore_hello_worlds": {
+            "mydb": {
                "name": "encore_hello_worlds",
                "username": "encore_hello_worlds_user",
                "password": {"$env": "DB_PASSWORD"}
