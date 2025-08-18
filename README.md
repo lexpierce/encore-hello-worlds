@@ -107,7 +107,7 @@ Once you've added a migration, restart your app with `encore run` to start up th
 
 Learn more in the docs: https://encore.dev/docs/ts/primitives/databases
 
-### Learn more
+### Learn more 
 
 There are many more features to explore in Encore.ts, for example:
 
