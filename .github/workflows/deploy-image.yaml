@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Download Encore CLI script
-        run: curl --output install.sh -L https://encore.dev/install.sh
+        run: curl -s --output install.sh -L https://encore.dev/install.sh
 
       - name: Install Encore CLI
         run: bash install.sh
@@ -38,4 +38,4 @@ jobs:
         run: docker push ghcr.io/${{ github.repository }}:latest
 
       - name: Deploy new image on Render
-        run: curl ${{ secrets.DEPLOYHOOK }}
+        run: curl -s ${{ secrets.DEPLOYHOOK }}
