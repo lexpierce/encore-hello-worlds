@@ -6,7 +6,7 @@
          "tls_config": {
             "disabled": true
          },
-         "Databases": {
+         "databases": {
             "mydb": {
                "name": "encore_hello_worlds",
                "username": "encore_hello_worlds_user",
