@@ -11,4 +11,3 @@ export const getUser = api(
    return await mydb.queryRow`SELECT * FROM users WHERE id = ${id}` as { id: number; name: string };
  }
 );
-
