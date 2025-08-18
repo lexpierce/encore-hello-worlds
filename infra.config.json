@@ -8,6 +8,7 @@
       },
       "databases": {
          "encore_hello_worlds": {
+            "name": "encore_hello_worlds"
             "username": "encore_hello_worlds_user",
             "password": {"$env": "DB_PASSWORD"}
           }
