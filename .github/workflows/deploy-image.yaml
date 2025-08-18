@@ -40,6 +40,4 @@ jobs:
         run: docker push ghcr.io/${{ github.repository }}:latest
 
       - name: Deploy new image on Render
-        env:
-          DEPLOYHOOK: ${{ secrets.DeployHook }}
-        run: curl $DEPLOYHOOOK
+        run: curl ${{ secrets.DEPLOYHOOK }}
