@@ -45,5 +45,3 @@ jobs:
           MYSECRET: ${{ secrets.DEPLOY_HOOK_SECRET }}
         with:
           args: https://api.render.com/deploy/srv-d2fshgv5r7bs73ecdr60?key=$MYSECRET
-        run: 
-
