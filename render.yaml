@@ -1,0 +1,34 @@
+databases:
+- name: encore-hello-world-test
+  plan: basic-256mb
+  diskSizeGB: 1
+  region: oregon
+  ipAllowList: []
+  postgresMajorVersion: "15"
+services:
+- type: web
+  name: encore-hello-world-test
+  runtime: image
+  image:
+    url: ghcr.io/lexpierce/encore-hello-worlds:latest
+  plan: starter
+  envVars:
+  - key: DB_NAME
+    fromDatabase:
+      name: encore-hello-world-test
+      property: database
+  - key: DB_USER
+    fromDatabase:
+      name: encore-hello-world-test
+      property: user
+  - key: DB_PASSWORD
+    fromDatabase:
+      name: encore-hello-world-test
+      property: database
+  - key: DB_HOST
+    fromDatabase:
+      name: encore-hello-world-test
+      property: host
+  region: oregon
+  autoDeployTrigger: off
+version: "1"
