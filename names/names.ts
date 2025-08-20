@@ -26,7 +26,7 @@ export const getUser = api(
 );
 
 export const putUser = api(
-  { expose: true, method: "PUT", path: "/names/add/:new_user" },
+  { expose: true, method: "GET", path: "/names/add/:new_user" },
   async ({new_user}: {new_user:string}): Promise<{ new_user: string }> => {
     return await mydb.exec`INSERT INTO users (name) VALUES (${new_user})`;
   }
