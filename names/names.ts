@@ -13,6 +13,9 @@ import { api } from "encore.dev/api";
 //
 //      curl http://localhost:4000/names/1
 //
+// You also need to populate the database. There is an API for that!
+//
+//      curl http://localhost:4000/names/add/Alice 
 
 const mydb = new SQLDatabase("mydb", {
   migrations: "./migrations",
