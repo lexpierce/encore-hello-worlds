@@ -2,14 +2,14 @@
    "$schema": "https://encore.dev/schemas/infra.schema.json",
    "sql_servers": [
       {
-         "host": "dpg-d2j5tr3e5dus738nakug-a",
+         "host": "dpg-d2jmapgdl3ps73cf2qgg-a",
          "tls_config": {
             "disable_ca_validation": true
          },
          "databases": {
             "mydb": {
-               "name": "encore_hello_world_test",
-               "username": "encore_hello_world_test_user",
+               "name": "encore_hello_world_test_ajx6",
+               "username": "encore_hello_world_test_ajx6_user",
                "password": {"$env": "DB_PASSWORD"}
              }
          }
