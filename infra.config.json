@@ -2,7 +2,7 @@
    "$schema": "https://encore.dev/schemas/infra.schema.json",
    "sql_servers": [
       {
-         "host": "dpg-d2jmapgdl3ps73cf2qgg-a.oregon-postgres.render.com",
+         "host": "dpg-d2jmapgdl3ps73cf2qgg-a",
          "tls_config": {
             "disable_ca_validation": true
          },
